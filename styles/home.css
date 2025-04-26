@@ -1,0 +1,100 @@
+body {
+    background-color: var(--bg-secondary-color);
+    transition: all 350ms ease-in-out;
+}
+
+/* Produtos */
+.produtos {
+    margin-top: 40px;
+    padding: 50px 0;
+
+    border-top: 5px dotted #FF8C00;
+    border-radius: 20vw 20vw 0 0;
+
+    background-color: var(--bg-color);
+
+    transition: all 350ms ease-in-out;
+}
+
+.produtos .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    letter-spacing: 5px;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.gallery-descriptions {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+.gallery-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.gallery-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.gallery-controls button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1200px) {
+    .produtos .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 830px) {
+    .gallery {
+        margin-inline: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos h2 {
+        font-size: 2.2em;
+    }
+
+    .produtos-lista {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 12px;
+    }
+}

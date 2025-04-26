@@ -1,0 +1,196 @@
+body {
+    background-color: var(--bg-secondary-color);
+    transition: all 350ms ease-in-out;
+}
+
+main {
+    width: 100%;
+    padding: 7% 18%;
+    margin-bottom: 120px;
+    background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+
+    transition: all 350ms ease-in-out;
+}
+
+/* Seção sobre a gente */
+main div#about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+main div#about-us div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+main div#about-us div:first-child div#description-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    width: 100%;
+}
+
+main div#about-us div:first-child div#description-title strong {
+    font-size: 29px;
+    letter-spacing: 3px;
+    color: var(--text-third-color);
+}
+
+main div#about-us div:first-child div#description-title span {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: var(--text-fourth-color);
+}
+
+main div#about-us div:first-child p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--text-secondary-color);
+}
+
+main div#about-us div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30vw; /* depende do layout desejado */
+    aspect-ratio: 1 / 1; /* mantém a proporção 1:1 (quadrado perfeito) */
+
+    border: 4px dotted #FF8C00;
+    box-shadow: 0px 0px 41px -6px rgba(255, 140, 0, 0.35);
+    border-radius: 50%;
+
+    padding: 0;
+}
+
+
+main div#about-us div:last-child svg {
+    width: 70px;
+    height: auto;
+    aspect-ratio: 1/1;
+    color: var(--text-fifth-color);
+}
+
+/* Seção conquistas */
+main div#company-ahcivements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+main div#company-ahcivements > :nth-child(2) {
+    border-inline: 1px solid rgba(235, 129, 1, .4);
+    padding-inline: 45px;
+}
+
+main div#company-ahcivements div.achivement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    text-align: center;
+}
+
+main div#company-ahcivements div.achivement span {
+    font-size: 15px;
+    color: #9c9b9b;
+    letter-spacing: 4px;
+}
+
+main div#company-ahcivements div.achivement strong {
+    font-size: 30px;
+    color: #eb8101;
+    letter-spacing: 4px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 7% 10%;
+        gap: 10vh;
+    }
+
+    #company-ahcivements {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10% 5%;
+        gap: 10vh;
+    }
+
+    main div#about-us {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    main div#about-us div:last-child svg {
+        width: 60px;
+        height: auto;
+    }
+
+    #company-ahcivements {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    #company-ahcivements > :nth-child(2) {
+        border: none;
+        padding-inline: 0;
+    }
+
+    #company-ahcivements .achivement strong {
+        font-size: 24px;
+    }
+
+    #company-ahcivements .achivement span {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 10% 5%;
+    }
+
+    main div#about-us {
+        gap: 40px;
+    }
+
+    main div#about-us div:last-child svg {
+        width: 50px;
+        height: auto;
+    }
+
+    #company-ahcivements {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    #company-ahcivements .achivement strong {
+        font-size: 20px;
+    }
+
+    #company-ahcivements .achivement span {
+        font-size: 12px;
+    }
+}
