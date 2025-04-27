@@ -48,11 +48,14 @@ button {
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: #e67e00;
 }
+
+
 
 .toggle {
   text-align: center;
@@ -77,7 +80,7 @@ button:hover {
     margin: 8px 0;
   }
 
-  button {
+  .enviar {
     padding: 10px;
     font-size: 14px;
   }
@@ -101,7 +104,7 @@ button:hover {
     margin: 6px 0;
   }
 
-  button {
+  .enviar {
     padding: 8px;
     font-size: 12px;
   }

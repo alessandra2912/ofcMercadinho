@@ -168,7 +168,6 @@ section.produtos {
 }
 
 .produto {
-    background-color: var(--card-bg, #fff);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     padding: 20px;
